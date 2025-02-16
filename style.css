@@ -14,16 +14,28 @@ canvas {
     border: 2px solid white;
     width: 90%;
     height: 60%;
+    cursor: pointer; /* Indica que se puede hacer clic */
 }
 
-/* Barra de vida */
-.health-bar {
+/* Barras de vida */
+.health-container {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px; /* Se posicionan en la parte superior */
+}
+
+.health-bar {
+    width: 45%;
     height: 20px;
     background: red;
-    margin: 10px 0;
     position: relative;
     border: 2px solid white;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
 }
 
 .health {
@@ -37,6 +49,7 @@ canvas {
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 button {
@@ -47,4 +60,5 @@ button {
     border-radius: 50%;
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }

@@ -9,9 +9,16 @@
 <body>
     <canvas id="gameCanvas"></canvas>
 
-    <!-- Barra de vida -->
-    <div class="health-bar">
-        <div id="playerHealth" class="health"></div>
+    <!-- Barras de vida -->
+    <div class="health-container">
+        <div class="health-bar">
+            <span>Jugador</span>
+            <div id="playerHealth" class="health"></div>
+        </div>
+        <div class="health-bar">
+            <span>Enemigo</span>
+            <div id="enemyHealth" class="health"></div>
+        </div>
     </div>
 
     <!-- Controles -->
@@ -19,6 +26,7 @@
         <button id="left">⬅️</button>
         <button id="right">➡️</button>
         <button id="attack">⚔️</button>
+        <button id="jump">⬆️</button> <!-- Botón de salto añadido -->
     </div>
 
     <script src="game.js"></script>
